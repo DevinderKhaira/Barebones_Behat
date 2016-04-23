@@ -1,0 +1,29 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: https://www.bbc.com/
+      goutte: ~
+      selenium2 : ~
+chrome:
+  extensions:
+    Behat\MinkExtension:
+      selenium2:
+        browser: chrome
+        capabilities: { "browserName": "chrome", "browser": "chrome", "version":  "48.0"}
+        #In order to use this call behat and at the end of the
+        #command type -p chrome
+firefox:
+  extensions:
+    Behat\MinkExtension:
+      selenium2:
+        browser: firefox
+        capabilities: { "browserName": "firefox", "browser": "firefox", "version": "44.0"}
+
+
+
+
+
+
+
+
+
